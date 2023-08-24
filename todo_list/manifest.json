@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "to-do list simples",
+    "description": "um auxiliar to-do list simples para te ajudar a cumprir as tarefas",
+    "version": "1.0",
+    "permissions": [
+        "storage"
+    ],
+    "icons": {
+        "48": "images/icon48.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "48": "images/icon48.png"
+        }
+    }
+}

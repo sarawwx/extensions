@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
+
+
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: #d4e4ad;
+    padding: 10px;
+    width: 250px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+}
+
+span {
+    flex-grow: 1;
+    padding-right: 10px;
+
+    width: calc(100% - 120px);
+}
+
+button {
+    background-color: #7b9e23;
+    /* letter-spacing: 1px; */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 0px;
+    padding: 8px 14px;
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #324600;
+}
+
+#clearButton {
+    background: rgb(69, 85, 41);
+}
+
+#clearButton:hover {
+    background-color: black;
+}
+
+/* .complete-button, */
+.delete-button {
+    background-color: #d4e4ad;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    margin-left: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 3px;
+}
+
+
+.complete-button {
+    padding: 5px;
+}
+
+.complete-button:hover,
+.delete-button:hover {
+    background-color: white;
+}
+
+.complete-button:hover {
+    color: black;
+}
+
+
+.completed {
+    text-decoration: line-through;
+    color: #95a5a6;
+}
+
+#taskInput {
+    /* margin-top: 10px; */
+    margin: 10px 0 8px;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+#taskInput::placeholder {
+    font-size: 12px;
+}
+
+#addButton,
+#clearButton {
+    margin-top: 5px;
+}
